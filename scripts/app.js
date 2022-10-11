@@ -1,17 +1,50 @@
 //@ts-check
 
 // Decalare a variable called "name" and assign your first name to it.
+let variable;
+variable = "Peter";
 
 // Log the variable you just created out to the console
 
+console.log("Peter");
+
 // change the following code so that "watermelon" is written to the console
-let fruit = "";
-console.log("The fruit variable equals: ", fruit);
+
+let watermelon = "";
+console.log("watermelon", watermelon);
 
 // Change the following code so the array is filtered to your
 // favorite fruit.  Feel free to add to the fruits array
 // if your favorite isn't in there.
 let fruits = ["grape", "apple", "kiwi", "strawberry"];
+fruits = fruits.filter((f) => f === "apple");
+console.log(fruits);
+
+let x = 32;
+let y = 62;
+
+class Player {
+	/**
+	 * @param {number} x
+	 * @param {number} y
+	 * @param {string} color
+	 */
+	constructor(x, y, color) {
+		this.x = x;
+		this.y = y;
+		this.color = color;
+	}
+
+	update() {
+		this.x = this.x + 1;
+		this.y + this.y + 1;
+	}
+
+	display() {
+		console.log(this.x, this.y, "blue");
+	}
+}
+
 fruits = fruits.filter((f) => f === "");
 console.log("The array of fruits now equals: ", fruits);
 
@@ -21,6 +54,11 @@ console.log("The array of fruits now equals: ", fruits);
 // and initialize the color property to a string value (you
 // can use a basic color or HSL string, your choice).
 //
+
+let santa = new Player(x, y, "blue");
+santa.update();
+santa.display();
+
 // Create a method on the class named update.  When update
 // is called, increment the x and y coordinates by 1.
 //
