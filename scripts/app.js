@@ -1,5 +1,4 @@
 //@ts-check
-
 // Decalare a variable called "name" and assign your first name to it.
 let variable;
 variable = "Peter";
@@ -20,8 +19,8 @@ let fruits = ["grape", "apple", "kiwi", "strawberry"];
 fruits = fruits.filter((f) => f === "apple");
 console.log(fruits);
 
-let x = 32;
-let y = 62;
+let x = 34;
+let y = 68;
 
 class Player {
 	/**
